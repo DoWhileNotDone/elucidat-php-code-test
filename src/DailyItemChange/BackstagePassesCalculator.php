@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\DailyItemChange;
+
+use App\Item;
 
 /**
  * Sell in period decreases daily

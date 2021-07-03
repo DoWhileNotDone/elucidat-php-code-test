@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\DailyItemChange;
+
+use App\Item;
 
 /**
  * A sulfurus item never has to be sold or decreases in Quality
