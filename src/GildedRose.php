@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\DailyItemChange\ItemCalculatorFactory;
+
 class GildedRose
 {
     private $items;

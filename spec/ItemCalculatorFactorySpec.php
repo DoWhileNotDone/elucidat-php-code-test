@@ -1,13 +1,13 @@
 <?php
 
-use App\AgedBrieCalculator;
-use App\BackstagePassesCalculator;
-use App\Calculator;
-use App\ConjuredCalculator;
+use App\DailyItemChange\AgedBrieCalculator;
+use App\DailyItemChange\BackstagePassesCalculator;
+use App\DailyItemChange\Calculator;
+use App\DailyItemChange\ConjuredCalculator;
 use App\Item;
-use App\ItemCalculatorFactory;
-use App\NormalCalculator;
-use App\SulfurasCalculator;
+use App\DailyItemChange\ItemCalculatorFactory;
+use App\DailyItemChange\NormalCalculator;
+use App\DailyItemChange\SulfurasCalculator;
 
 describe('Item Calculator', function () {
     describe('get calculator for item', function () {

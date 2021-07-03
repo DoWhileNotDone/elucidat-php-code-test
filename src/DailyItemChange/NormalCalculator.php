@@ -1,15 +1,16 @@
 <?php
 
-namespace App;
+namespace App\DailyItemChange;
+
+use App\Item;
 
 /**
  * Sell in period decreases daily
  * Quality decreases daily
  * Once the sell by date has passed, Quality degrades twice as fast
- * "Conjured" items degrade in Quality twice as fast as normal items
  * Quality cannot be negative
-*/
-class ConjuredCalculator implements Calculator
+ */
+class NormalCalculator implements Calculator
 {
     public function update(Item $item): Item
     {
@@ -27,6 +28,6 @@ class ConjuredCalculator implements Calculator
 
     private function getQualityDifference(int $sellIn): int
     {
-        return $sellIn <= 0 ? 4 : 2;
+        return $sellIn <= 0 ? 2 : 1;
     }
 }
