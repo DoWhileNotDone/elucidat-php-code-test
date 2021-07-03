@@ -151,7 +151,6 @@ describe('Gilded Rose', function () {
                 expect($gr->getItem(0)->sellIn)->toBe(-2);
             });
         });
-        /*
         context("Conjured Items", function () {
             it('updates Conjured items before the sell date', function () {
                 $gr = new GildedRose([new Item('Conjured Mana Cake', 10, 10)]);
@@ -190,6 +189,5 @@ describe('Gilded Rose', function () {
                 expect($gr->getItem(0)->sellIn)->toBe(-11);
             });
         });
-        */
     });
 });
