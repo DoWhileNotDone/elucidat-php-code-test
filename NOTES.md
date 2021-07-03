@@ -13,6 +13,6 @@ Tests can be run using docker:
  docker run --rm -v "$PWD":/app -w "/app" php:8-cli ./vendor/bin/kahlan
 ```
 
-## Misc Version
+## Misc Amends
 
 * Replaced composer package crysalead/kahlan with recommended kahlan/kahlan
