@@ -17,24 +17,20 @@ class BackstagePassesCalculator implements Calculator
     {
         $item->sellIn -= 1;
 
-        $quality = $item->quality;
-
         switch (true) {
-            case $item->sellIn < 0:
-                $quality = 0;
+            case $item->sellIn >= 10:
+                $item->quality += 1;
                 break;
-            case $item->sellIn < 10 && $item->sellIn > 5:
-                $quality += 2;
+            case $item->sellIn >= 5:
+                $item->quality += 2;
                 break;
-            case $item->sellIn <= 5:
-                $quality += 3;
+            case $item->sellIn >= 0:
+                $item->quality += 3;
                 break;
             default:
-                $quality += 1;
+                $item->quality = 0;
                 break;
         }
-
-        $item->quality = $quality;
       
         if ($item->quality > 50) {
             $item->quality = 50;
